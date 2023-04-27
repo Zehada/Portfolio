@@ -90,6 +90,7 @@ body {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: red;
 }
 .a-propos .a-propos-texte {
   height: 100vh;
