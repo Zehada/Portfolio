@@ -90,11 +90,16 @@ body {
     }
 }
 
+.wrapper {
+    z-index: -1;
+}
+
 .a-propos {
+    margin-top: 100vh;
+
     img {
         height: 100vh;
         object-fit: cover;
-        background-color: red;
     }
 
     .a-propos-texte {

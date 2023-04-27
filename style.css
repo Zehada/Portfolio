@@ -86,11 +86,17 @@ body {
     border-color: transparent;
   }
 }
+.wrapper {
+  z-index: -1;
+}
+
+.a-propos {
+  margin-top: 100vh;
+}
 .a-propos img {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: red;
 }
 .a-propos .a-propos-texte {
   height: 100vh;
