@@ -1,0 +1,10 @@
+@mixin margin58 {
+    margin-top: 5.8rem;
+}
+
+@mixin mq() {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+

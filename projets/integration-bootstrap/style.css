@@ -1,0 +1,202 @@
+
+.premier {
+    background: url(images/alice-dietrich-FwF_fKj5tBo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 844px;
+}
+
+h1 {
+    font-size: 120px;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.menu1 a {
+    position: relative;
+}
+
+.menu1 a::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background-color: #D21146;
+    left: 50%;
+    bottom: -30px;
+    transition: 0.3s;
+}
+
+.menu1 a:hover::after {
+    left: 0;
+    width: 100%;
+
+}
+
+.reseaux a {
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.reseaux a:hover {
+    box-shadow: 0px 4px 0px 3px #D21146;
+}
+
+.scrolldown {
+    font-size: 20px;
+}
+
+.deco {
+    top: 50px;
+    left: 0;
+}
+
+.deco2 {
+    transform: rotate(90deg);
+    bottom: 0;
+    right: 100px;
+}
+
+h2, h1, h3 {
+    font-family: 'Fraunces', serif;
+}
+
+h3, .w, span, .b {
+    font-weight: 700;
+}
+
+.cinquieme p, nav a {
+    font-weight: 700;
+}
+
+
+.w, .ipsum, .date, .troisieme p, .cinqueme p, .septieme {
+    font-family: 'Barlow', sans-serif;
+}
+
+.deuxieme {
+    background-color: #D21146;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.w {
+    font-size: 150px;
+    color: #FFFFFF33;
+    left: 50%;
+    top: -80px;
+    transform: translateX(-50%);
+}
+
+.logo-lorem {
+    max-width: 40px;
+    margin-top: 150px;
+}
+
+.chevrons {
+    width: 12px;
+    height: 20px;
+}
+
+.ipsum {
+    font-size: 12px;
+}
+
+.troisieme img, .quatrieme img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.b {
+    font-size: 180px;
+    color: #D21146;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.cinquieme h2 {
+    font-size: 31px;
+}
+
+.text-b {
+    margin-top: 50px;
+}
+
+.sixieme div {
+    background-image: url(images/blog01.jpg);
+    background-size: cover;
+    height: 291px;
+    width: 350px;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.sixieme h3 {
+    color: #D21146;
+}
+
+p {
+    font-size: 14px;
+}
+
+.un div {
+    background-image: url(images/blog02.jpg);
+}
+
+.deux div {
+    background-image: url(images/blog03.jpg);
+}
+
+.image {
+    transition: border 0.25s ease-in-out;
+    border: 0px solid #D21146;
+}
+
+.image:hover {
+    border: 5px solid #D21146;
+}
+
+.date-text {
+    line-height: 25px;
+}
+
+@media (min-width: 768px)
+ {
+    header {
+        max-width: 75%;
+    }
+
+    .premier {
+        height: 879px;
+    }
+
+    .date-text {
+        background-color: #222222;
+        padding: 110px;
+    }
+
+    .ligne {
+        background-color: #F3F3F3;
+    }
+
+    .troisieme {
+        color: white;
+    }
+
+    .troisieme img, .quatrieme img {
+        height: 100%;
+    }
+
+    .sixieme div {
+        width: auto;
+    }
+ }
+
+ iframe {
+    width: 100%;
+    height: 500px;
+ }

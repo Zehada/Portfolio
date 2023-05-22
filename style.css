@@ -2,6 +2,71 @@ body {
   font-family: monospace;
 }
 
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px 11px 5px 11px;
+  font-size: 0.9rem !important;
+  margin: 0;
+}
+
+#loader h1 {
+  color: white;
+  border: none;
+  text-transform: none;
+  font-size: 1.5rem !important;
+  animation: fadeOut 1.9s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navbar {
+  transition: top 0.3s;
+  top: -100px;
+  animation: apparition 1s ease-in-out forwards;
+}
+
+@keyframes apparition {
+  100% {
+    top: 0;
+  }
+}
+.nav-item {
+  font-family: "Figtree", sans-serif;
+  color: black;
+  position: relative;
+  padding: 0 !important;
+  margin: 0.5rem;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+.nav-item::after {
+  position: absolute;
+  content: "";
+  background: black;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  transition: 0.4s ease-out;
+}
+
+.nav-item:hover::after {
+  left: 0;
+  width: 100%;
+}
+
 /* Remove border from toggler */
 .navbar-toggler {
   border: 0 !important;
@@ -73,7 +138,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid orange;
-  font-size: 2em;
 }
 
 @keyframes typing {
@@ -90,6 +154,22 @@ body {
   z-index: -1;
 }
 
+#projets a {
+  text-decoration: none;
+  color: black;
+  font-family: "Figtree", sans-serif;
+}
+#projets .btn {
+  border-radius: 0;
+}
+
+.box img {
+  width: 60%;
+  height: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .a-propos {
   margin-top: 100vh;
 }
@@ -100,4 +180,74 @@ body {
 }
 .a-propos .a-propos-texte {
   height: 100vh;
+}
+
+form {
+  max-width: 420px;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type=submit] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type=submit]:hover {
+  background-color: rgba(240, 172, 78, 0.5137254902) !important;
+}
+
+@media (min-height: 720px) {
+  .contact-text {
+    width: 25% !important;
+  }
+}
+#contact {
+  background-color: white;
+  height: 200px;
+}
+#contact a {
+  text-decoration: none;
+  color: black;
+}
+#contact img {
+  width: 50px;
+}
+#contact div {
+  width: 270px;
 }/*# sourceMappingURL=style.css.map */

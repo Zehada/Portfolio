@@ -1,0 +1,15 @@
+@function add($a, $b){
+    @return calc($a / $b) * 100%;
+}
+
+@function add1($a, $b){
+    @return calc($a / $b) * 100vh;
+}
+
+@function add2($a, $b){
+    @return calc($a / $b) * 100vw;
+}
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
