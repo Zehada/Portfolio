@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="loader" class="vh-100 bg-dark d-flex justify-content-center align-items-center">
+    <div id="loader" class="bg-dark d-flex justify-content-center align-items-center">
         <h1>Oguzhan Oncu | Portfolio</h1>
     </div>
     <div id="content" class="d-none">
@@ -32,7 +32,7 @@
                     <span class="toggler-icon bottom-bar"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav d-flex align-items-start">
                         <a class="nav-item nav-link" href="#">Acceuil</a>
                         <a class="nav-item nav-link" href="#a-propos">À propos</a>
                         <a class="nav-item nav-link" href="#projets">Projets</a>
@@ -42,7 +42,7 @@
             </div>
         </nav>
         <div
-            class="wrapper vh-100 w-100 d-flex justify-content-center align-items-center bg-dark text-white position-fixed fixed-top">
+            class="wrapper w-100 d-flex justify-content-center align-items-center bg-dark text-white position-fixed fixed-top">
             <div class="typing-demo">
                 Bonjour, je m'appelle Oguzhan.
             </div>
@@ -64,8 +64,8 @@
                 </div>
             </div>
         </div>
-        <div id="projets" class="projets bg-dark text-white vh-100 d-flex flex-column justify-content-between">
-            <div class="text-white d-flex justify-content-center align-items-center mt-5">
+        <div id="projets" class="projets bg-dark text-white d-flex flex-column justify-content-between">
+            <div class="text-white d-flex justify-content-center align-items-center mt-5 mb-5">
                 <h2>Projets</h2>
             </div>
             <div id="carouselExampleControls" class="carousel slide">
@@ -74,34 +74,31 @@
                         <div class="box d-flex flex-column justify-content-center align-items-center">
                             <img src="images/integration1.png" alt="Screenshot première intégration">
                             <h3 class="text-center w-75 mb-5 mt-5">Ma première intégration HTML/CSS</h3>
-                            <button type="button" class="btn btn-warning"><a
-                                    href="projets/01 - INITIATION INTEGRATION/index.html"
-                                    target="blank">Découvrir</a></button>
+                            <a class="bg-warning mb-5" href="projets/01 - INITIATION INTEGRATION/index.html"
+                                target="blank">Découvrir</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="box d-flex flex-column justify-content-center align-items-center">
                             <img src="images/integration2.png" alt="Screenshot intégration avec SASS">
                             <h3 class="text-center w-75 mb-5 mt-5">Ma première intégration avec SASS</h3>
-                            <button type="button" class="btn btn-warning"><a href="projets/integration-sass/index.html"
-                                    target="blank">Découvrir</a></button>
+                            <a class="bg-warning mb-5" href="projets/integration-sass/index.html"
+                                target="blank">Découvrir</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="box d-flex flex-column justify-content-center align-items-center">
                             <img src="images/integration3.png" alt="Screenshot intégration avec Bootstrap">
                             <h3 class="text-center w-75 mb-5 mt-5">Ma première intégration avec Bootstrap</h3>
-                            <button type="button" class="btn btn-warning"><a
-                                    href="projets/integration-bootstrap/index.html"
-                                    target="blank">Découvrir</a></button>
+                            <a class="bg-warning mb-5" href="projets/integration-bootstrap/index.html"
+                                target="blank">Découvrir</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="box d-flex flex-column justify-content-center align-items-center">
                             <img src="images/integration4.png" alt="Screenshot memory game">
                             <h3 class="text-center w-75 mb-5 mt-5">Jeu de mémoire avec Javascript</h3>
-                            <button type="button" class="btn btn-warning"><a href="projets/projet-jeu/index.html"
-                                    target="blank">Découvrir</a></button>
+                            <a class="bg-warning mb-5" href="projets/projet-jeu/index.html" target="blank">Découvrir</a>
                         </div>
                     </div>
                 </div>

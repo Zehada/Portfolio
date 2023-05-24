@@ -12,6 +12,9 @@ h1 {
   margin: 0;
 }
 
+#loader {
+  min-height: 100vh;
+}
 #loader h1 {
   color: white;
   border: none;
@@ -33,7 +36,6 @@ h1 {
   top: -100px;
   animation: apparition 1s ease-in-out forwards;
 }
-
 @keyframes apparition {
   100% {
     top: 0;
@@ -139,7 +141,6 @@ h1 {
   overflow: hidden;
   border-right: 3px solid orange;
 }
-
 @keyframes typing {
   from {
     width: 0;
@@ -152,84 +153,42 @@ h1 {
 }
 .wrapper {
   z-index: -1;
+  min-height: 100vh;
 }
 
+#projets {
+  min-height: 100vh;
+}
 #projets a {
   text-decoration: none;
   color: black;
   font-family: "Figtree", sans-serif;
+  padding: 10px 20px;
+  border: 2px solid transparent;
 }
-#projets .btn {
-  border-radius: 0;
+#projets a:hover {
+  background-color: transparent !important;
+  color: white;
+  border: 2px solid orange;
 }
 
 .box img {
   width: 60%;
   height: 30%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .a-propos {
   margin-top: 100vh;
 }
 .a-propos img {
-  height: 100vh;
+  min-height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .a-propos .a-propos-texte {
-  height: 100vh;
-}
-
-form {
-  max-width: 420px;
-}
-
-.feedback-input {
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-.feedback-input:focus {
-  border: 2px solid;
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-[type=submit] {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  width: 100%;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
-}
-
-[type=submit]:hover {
-  background-color: rgba(240, 172, 78, 0.5137254902) !important;
+  min-height: 100vh;
 }
 
 @media (min-height: 720px) {
@@ -244,6 +203,9 @@ textarea {
 #contact a {
   text-decoration: none;
   color: black;
+}
+#contact a:hover {
+  color: rgb(73, 73, 73);
 }
 #contact img {
   width: 50px;
