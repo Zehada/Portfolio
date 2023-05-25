@@ -277,6 +277,27 @@ h1 {
     }
 }
 
+#contact {
+    background-color: white;
+    height: 200px;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: rgb(73, 73, 73)
+        }
+    }
+
+    img {
+        width: 40px;
+    }
+
+    div {
+        width: 270px;
+    }
+}
 
 // form {
 //     max-width: 420px;
@@ -329,30 +350,37 @@ h1 {
 //     background-color: #f0ac4e83 !important;
 // }
 
-@media (min-height: 720px) {
-    .contact-text {
-        width: 25% !important;
-    }
-}
-
-#contact {
-    background-color: white;
-    height: 200px;
-
-    a {
-        text-decoration: none;
-        color: black;
-
-        &:hover {
-            color: rgb(73, 73, 73)
+@media screen and (max-width: 767px) {
+    #contact {
+        img {
+            width: 30px;
         }
     }
 
-    img {
-        width: 50px;
+    // .contact-text {
+    //     width: 25% !important;
+    // }
+    #a-propos {
+        .a-propos-texte {
+            min-height: 50vh;
+        }
+
+        img {
+            max-height: 50vh;
+            min-height: 50vh;
+            min-width: 100%;
+        }
+
+
     }
 
-    div {
-        width: 270px;
+    #projets {
+        min-height: 0;
+
+        h3 {
+            font-size: 0.7rem;
+        }
     }
+
+
 }

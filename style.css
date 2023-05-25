@@ -217,11 +217,6 @@ h1 {
   min-height: 100vh;
 }
 
-@media (min-height: 720px) {
-  .contact-text {
-    width: 25% !important;
-  }
-}
 #contact {
   background-color: white;
   height: 200px;
@@ -234,8 +229,28 @@ h1 {
   color: rgb(73, 73, 73);
 }
 #contact img {
-  width: 50px;
+  width: 40px;
 }
 #contact div {
   width: 270px;
+}
+
+@media screen and (max-width: 767px) {
+  #contact img {
+    width: 30px;
+  }
+  #a-propos .a-propos-texte {
+    min-height: 50vh;
+  }
+  #a-propos img {
+    max-height: 50vh;
+    min-height: 50vh;
+    min-width: 100%;
+  }
+  #projets {
+    min-height: 0;
+  }
+  #projets h3 {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */
