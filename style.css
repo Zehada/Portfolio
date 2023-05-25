@@ -69,7 +69,6 @@ h1 {
   width: 100%;
 }
 
-/* Remove border from toggler */
 .navbar-toggler {
   border: 0 !important;
 }
@@ -82,7 +81,6 @@ h1 {
   border: 0 !important;
 }
 
-/* Lines of the Toggler */
 .toggler-icon {
   width: 30px;
   height: 3px;
@@ -91,12 +89,10 @@ h1 {
   transition: all 0.2s;
 }
 
-/* Adds Space between the lines */
 .middle-bar {
   margin: 5px auto;
 }
 
-/* State when navbar is opened (START) */
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
@@ -112,8 +108,6 @@ h1 {
   transform-origin: 10% 90%;
 }
 
-/* State when navbar is opened (END) */
-/* State when navbar is collapsed (START) */
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
 }
@@ -127,8 +121,6 @@ h1 {
   transform: rotate(0);
 }
 
-/* State when navbar is collapsed (END) */
-/* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
   background-color: black;
 }
@@ -159,6 +151,21 @@ h1 {
 #projets {
   min-height: 100vh;
 }
+#projets h2 {
+  padding: 0 10px 30px 10px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  position: relative;
+}
+#projets h2::after {
+  position: absolute;
+  content: "";
+  background: white;
+  bottom: 25px;
+  left: -25%;
+  width: 150%;
+  height: 1px;
+}
 #projets a {
   text-decoration: none;
   color: black;
@@ -171,6 +178,9 @@ h1 {
   color: white;
   border: 2px solid orange;
 }
+#projets h3 {
+  font-size: 1.2rem;
+}
 
 .box img {
   width: 60%;
@@ -179,15 +189,31 @@ h1 {
   object-fit: cover;
 }
 
-.a-propos {
+#a-propos {
   margin-top: 100vh;
 }
-.a-propos img {
+#a-propos h2 {
+  padding: 0 10px 30px 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: relative;
+  display: inline-flex;
+}
+#a-propos h2::after {
+  position: absolute;
+  content: "";
+  background: black;
+  bottom: 25px;
+  left: -25%;
+  width: 150%;
+  height: 1px;
+}
+#a-propos img {
   min-height: 100vh;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.a-propos .a-propos-texte {
+#a-propos .a-propos-texte {
   min-height: 100vh;
 }
 
