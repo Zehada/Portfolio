@@ -29,6 +29,10 @@ h1 {
                 opacity: 1;
             }
 
+            50% {
+                opacity: 1;
+            }
+
             100% {
                 opacity: 0;
             }
@@ -36,6 +40,10 @@ h1 {
 
         @keyframes fadeOut {
             0% {
+                opacity: 1;
+            }
+
+            50% {
                 opacity: 1;
             }
 
@@ -215,16 +223,17 @@ h1 {
 
     a {
         text-decoration: none;
-        color: black;
+        color: white;
         font-family: 'Figtree', sans-serif;
         padding: 10px 20px;
-        border: 2px solid transparent;
+        border: 2px solid #ffc107;
+        transition: background-color 0.3s;
 
 
         &:hover {
-            background-color: transparent !important;
-            color: white;
-            border: 2px solid orange;
+            background-color: #ffc107;
+            color: black;
+
 
 
         }
@@ -240,6 +249,7 @@ h1 {
 .box img {
     width: 60%;
     height: 30%;
+    box-shadow: 10px 10px 20px 5px black;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -279,6 +289,7 @@ h1 {
 
 #contact {
     background-color: white;
+    font-family: 'Figtree', sans-serif;
     height: 200px;
 
     a {
@@ -366,8 +377,8 @@ h1 {
         }
 
         img {
-            max-height: 50vh;
-            min-height: 50vh;
+            max-height: 60vh;
+            min-height: 60vh;
             min-width: 100%;
         }
 

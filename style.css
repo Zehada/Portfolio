@@ -26,6 +26,9 @@ h1 {
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
   }
@@ -168,15 +171,15 @@ h1 {
 }
 #projets a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: "Figtree", sans-serif;
   padding: 10px 20px;
-  border: 2px solid transparent;
+  border: 2px solid #ffc107;
+  transition: background-color 0.3s;
 }
 #projets a:hover {
-  background-color: transparent !important;
-  color: white;
-  border: 2px solid orange;
+  background-color: #ffc107;
+  color: black;
 }
 #projets h3 {
   font-size: 1.2rem;
@@ -185,6 +188,7 @@ h1 {
 .box img {
   width: 60%;
   height: 30%;
+  box-shadow: 10px 10px 20px 5px black;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -219,6 +223,7 @@ h1 {
 
 #contact {
   background-color: white;
+  font-family: "Figtree", sans-serif;
   height: 200px;
 }
 #contact a {
@@ -243,8 +248,8 @@ h1 {
     min-height: 50vh;
   }
   #a-propos img {
-    max-height: 50vh;
-    min-height: 50vh;
+    max-height: 60vh;
+    min-height: 60vh;
     min-width: 100%;
   }
   #projets {
