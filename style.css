@@ -38,6 +38,7 @@ h1 {
   transition: top 0.3s;
   top: -100px;
   animation: apparition 1s ease-in-out forwards;
+  animation-delay: 1.7s;
 }
 @keyframes apparition {
   100% {
@@ -159,6 +160,7 @@ h1 {
   border-left: 1px solid white;
   border-right: 1px solid white;
   position: relative;
+  margin: 0;
 }
 #projets h2::after {
   position: absolute;
@@ -195,10 +197,7 @@ h1 {
 
 .box img {
   width: 60%;
-  height: 30%;
   box-shadow: 10px 10px 20px 5px black;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 #a-propos {
