@@ -239,6 +239,17 @@ h1 {
         }
     }
 
+    .github {
+        color: black;
+        background-color: #ffc107;
+
+        &:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+    }
+
     h3 {
         font-size: 1.2rem;
     }

@@ -181,6 +181,14 @@ h1 {
   background-color: #ffc107;
   color: black;
 }
+#projets .github {
+  color: black;
+  background-color: #ffc107;
+}
+#projets .github:hover {
+  background-color: transparent;
+  color: white;
+}
 #projets h3 {
   font-size: 1.2rem;
 }
