@@ -11,6 +11,19 @@ function showContent() {
     content.classList.add("d-block");
 }
 
+
+/**********
+ * NAVBAR *
+ **********/
+
+const navItems = document.querySelectorAll(".nav-item");
+const toggler = document.querySelector(".navbar-toggler");
+for (item of navItems) {
+    item.addEventListener("click", function () {
+        toggler.click();
+    });
+}
+
 // // Navbar
 
 // const navbar = document.querySelector(".navbar");
