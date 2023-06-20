@@ -1,0 +1,128 @@
+{
+    "movies": {
+        "movie": [
+            {
+                "title": "Shutter Island",
+                "id": "11324"
+            },
+            {
+                "title": "Le Prestige",
+                "id": "1124"
+            },
+            {
+                "title": "Les Évadés",
+                "id": "278"
+            },
+            {
+                "title": "Django Unchained",
+                "id": "68718"
+            },
+            {
+                "title": "Inglourious Basterds",
+                "id": "16869"
+            },
+            {
+                "title": "Interstellar",
+                "id": "157336"
+            },
+            {
+                "title": "Million Dollar Baby",
+                "id": "70"
+            },
+            {
+                "title": "La Plage",
+                "id": "1907"
+            },
+            {
+                "title": "Le Voyage de Chihiro",
+                "id": "129"
+            },
+            {
+                "title": "Inception",
+                "id": "27205"
+            },
+            {
+                "title": "Un homme d'exception",
+                "id": "453"
+            },
+            {
+                "title": "Will Hunting",
+                "id": "489"
+            },
+            {
+                "title": "Fight Club",
+                "id": "550"
+            },
+            {
+                "title": "Gravity",
+                "id": "49047"
+            },
+            {
+                "title": "Sin City",
+                "id": "187"
+            }
+        ],
+        "serie": [
+            {
+                "title": "The Office",
+                "id": "2316"
+            },
+            {
+                "title": "Parks and Recreation",
+                "id": "8592"
+            },
+            {
+                "title": "Breaking Bad",
+                "id": "1396"
+            },
+            {
+                "title": "The Expanse",
+                "id": "63639"
+            },
+            {
+                "title": "Naruto",
+                "id": "46260"
+            },
+            {
+                "title": "Squid Game",
+                "id": "93405"
+            },
+            {
+                "title": "Cobra Kai",
+                "id": "77169"
+            },
+            {
+                "title": "Space Force",
+                "id": "85922"
+            },
+            {
+                "title": "Peaky Blinders",
+                "id": "60574"
+            },
+            {
+                "title": "Better Call Saul",
+                "id": "60059"
+            },
+            {
+                "title": "Narcos",
+                "id": "63351"
+            },
+            {
+                "title": "Brooklyn Nine-Nine",
+                "id": "48891"
+            },
+            {
+                "title": "The Boys",
+                "id": "76479"
+            },
+            {
+                "title": "South Park",
+                "id": "2190"
+            },
+            {
+                "title": "Community",
+                "id": "18347"
+            }
+        ]
+    }
+}

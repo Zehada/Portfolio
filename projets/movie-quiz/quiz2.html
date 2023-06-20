@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content-quiz2">
+        <div id="boxfilm" class="d-flex flex-column justify-content-between pb-5">
+            <nav class="px-md-5 px-3 navbar navbar-expand-md justify-content-end align-items-center bg-transparent">
+                <div class="container-fluid p-0">
+                    <a class="text-decoration-none" href="#">
+                        <img class="d-md-none navbar-brand m-0" src="images/logo_moviequiz 1.png" alt="Logo">
+                        <img class="d-none d-md-block navbar-brand m-0 me-3" id="grand-logo"
+                            src="images/logo_moviequiz.png" alt="Logo">
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between flex-md-row-reverse"
+                        id="interrogation">
+                        <button id="myBtn"
+                            class="example-popover bg-transparent p-0 border-0 d-flex align-items-center text-white text-decoration-none"
+                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                            data-bs-content="Cliquez sur les images de films et de séries à trouver et essayez de deviner de quel film ou série il s'agit."
+                            data-bs-custom-class="custom-popover">
+                            <img src="images/Vector.png" alt="Point d'interrogation">
+                            <p class="d-none d-md-block mb-0 ms-2">Comment jouer</p>
+                        </button>
+
+
+                        <button class="navbar-toggler collapsed ms-3 p-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon top-bar"></span>
+                            <span class="toggler-icon middle-bar"></span>
+                            <span class="toggler-icon bottom-bar"></span>
+                        </button>
+                        <div>
+                            <div class="navbar-nav d-none d-md-flex align-items-start">
+
+                                <a class="nav-item nav-link" href="movie-quiz.html">Acceuil</a>
+                                <a class="nav-item nav-link" href="movie-quiz.html#lesseriestrouvees">Séries</a>
+                                <a class="nav-item nav-link" href="movie-quiz.html#lesfilmstrouves">Films</a>
+                                <a class="nav-item nav-link" href="movie-quiz.html#lesfilmstrouves">Tous les films et
+                                    Séries</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                        <div class="navbar-nav d-flex align-items-start d-md-none">
+
+                            <a class="nav-item nav-link" href="movie-quiz.html">Acceuil</a>
+                            <a class="nav-item nav-link" href="movie-quiz.html#lesseriestrouvees">Séries</a>
+                            <a class="nav-item nav-link" href="movie-quiz.html#lesfilmstrouves">Films</a>
+                            <a class="nav-item nav-link" href="movie-quiz.html#lesfilmstrouves">Tous les films et
+                                Séries</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <h2 class="px-md-5 px-3 display-2 text-uppercase fw-bolder" id="movietitle">John Wick :
+                <br>Chapitre 4
+            </h2>
+            <div class="px-md-5 px-3">
+                <h3 class="text-uppercase fw-bolder fs-4">Synopsis</h3>
+                <p class="mt-4 w-75" id="synopsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
+                    cumque?
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="px-md-5 px-3 mb-5">
+        <h3 class="fw-bolder">Avec :</h3>
+        <div class="swiper myswiper w-100" id="swiper-acteur">
+            <div class="swiper-wrapper acteurs">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

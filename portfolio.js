@@ -18,12 +18,13 @@ function showContent() {
 
 const navItems = document.querySelectorAll(".nav-item");
 const toggler = document.querySelector(".navbar-toggler");
-for (item of navItems) {
-    item.addEventListener("click", function () {
-        toggler.click();
-    });
+if (screen.width < 768) {
+    for (item of navItems) {
+        item.addEventListener("click", function () {
+            toggler.click();
+        });
+    }
 }
-
 // // Navbar
 
 // const navbar = document.querySelector(".navbar");
