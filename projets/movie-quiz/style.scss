@@ -19,7 +19,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4rem;
     letter-spacing: 0.3rem;
-    animation: fade 1s forwards 3s;
+    animation: fade 1s forwards 2.5s;
 }
 
 @keyframes fade {
@@ -39,7 +39,6 @@ body {
 }
 
 #main-content {
-    background-image: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 1%, rgba(0, 0, 0, 0) 100%), url('images/john-wick.jpg');
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -240,7 +239,6 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 20%, rgba(0, 0, 0, 0) 100%);
 }
 
 #synopsis {
