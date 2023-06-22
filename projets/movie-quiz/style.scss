@@ -181,6 +181,15 @@ nav {
         max-width: 20px;
     }
 
+    #mauvaise-reponse,
+    #bonne-reponse {
+        font-size: 1.3rem !important;
+    }
+
+    #proposition {
+        font-size: 1.3rem;
+    }
+
 }
 
 
@@ -200,7 +209,8 @@ nav {
         object-fit: cover;
     }
 
-    .atrouver img {
+    .atrouver img,
+    .atrouver-film {
         filter: grayscale(100%);
     }
 }

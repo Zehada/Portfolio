@@ -80,10 +80,6 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 
-
-
-
-
 /**********
  * SWIPER *
  **********/
@@ -94,7 +90,6 @@ var swiper = new Swiper(".myswiper", {
     freeMode: true,
 
 });
-
 
 
 /********
@@ -145,7 +140,7 @@ let printIt = (data) => {
             // pour chaque film, affiche le backdrop
             const filmsATrouver = document.getElementById("filmatrouver");
             const divSwiper = document.createElement("div");
-            divSwiper.classList.add('swiper-slide', 'atrouver', 'filmatrouver');
+            divSwiper.classList.add('swiper-slide', 'atrouver-film', 'filmatrouver');
             filmsATrouver.appendChild(divSwiper);
             const a = document.createElement("a");
             a.href = "quiz.html";
@@ -185,9 +180,10 @@ let printIt = (data) => {
             }
 
             // ajoute le lien de l'image à trouver
-            const imageClicked = document.querySelectorAll(".atrouver img");
+            const imageClicked = document.querySelectorAll(".atrouver-film img");
             const buttonPressed = e => {
                 localStorage.setItem('image backdrop cliqué', e.target.attributes['src'].value);
+                localStorage.setItem('backdrop type cliqué', "film");
             }
             for (let image of imageClicked) {
                 image.addEventListener("click", buttonPressed);
@@ -203,9 +199,6 @@ let printIt = (data) => {
             for (let image of imageTrouvee) {
                 image.addEventListener("click", ImagePressed);
             }
-
-
-
 
         }
 
@@ -255,25 +248,25 @@ let printIt = (data) => {
                 document.getElementById("soumettre").click();
             }
         });
+        if (localStorage.getItem("backdrop type cliqué") === "film") {
+            document.getElementById("soumettre").addEventListener("click", function () {
+                for (i = 0; i < data.items.length; i++) {
+                    if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === data.items[i].title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
 
-        document.getElementById("soumettre").addEventListener("click", function () {
+                        document.getElementById("bonne-reponse").style.display = "block";
+                        document.getElementById("mauvaise-reponse").style.display = "none";
+                        setTimeout(function () { window.location.replace("movie-quiz.html") }, 3000);
+                        localStorage.setItem(("trouvé " + data.items[i].title), ("https://image.tmdb.org/t/p/original" + data.items[i].poster_path));
+                        localStorage.setItem("dernier trouvé", data.items[i].id);
+                        localStorage.setItem("type dernier trouvé(é)", "film");
 
-            for (i = 0; i < data.items.length; i++) {
-                if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === data.items[i].title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
-
-                    document.getElementById("bonne-reponse").style.display = "block";
-                    document.getElementById("mauvaise-reponse").style.display = "none";
-                    setTimeout(function () { window.location.replace("movie-quiz.html") }, 3000);
-                    localStorage.setItem(("trouvé " + data.items[i].title), ("https://image.tmdb.org/t/p/original" + data.items[i].poster_path));
-                    localStorage.setItem("dernier trouvé", data.items[i].id);
-                    localStorage.setItem("type dernier trouvé(é)", "film");
-
-                } else if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") != data.items[i].title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
-                    document.querySelector("input").value = "";
-                    document.getElementById("mauvaise-reponse").style.display = "block";
+                    } else if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") != data.items[i].title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
+                        document.querySelector("input").value = "";
+                        document.getElementById("mauvaise-reponse").style.display = "block";
+                    }
                 }
-            }
-        });
+            });
+        }
 
     };
 
@@ -409,6 +402,7 @@ let printImageFilm = (data) => {
             const imageClicked = document.querySelectorAll(".atrouver img");
             const buttonPressed = e => {
                 localStorage.setItem('image backdrop cliqué', e.target.attributes['src'].value);
+                localStorage.setItem('backdrop type cliqué', "série");
             }
             for (let image of imageClicked) {
                 image.addEventListener("click", buttonPressed);
@@ -476,26 +470,28 @@ let printImageFilm = (data) => {
             }
         });
 
-        document.getElementById("soumettre").addEventListener("click", function () {
-            for (i = 0; i < data.items.length; i++) {
+        if (localStorage.getItem("backdrop type cliqué") === "série") {
+            document.getElementById("soumettre").addEventListener("click", function () {
+                for (i = 0; i < data.items.length; i++) {
 
-                if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === data.items[i].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
+                    if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === data.items[i].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
 
-                    document.getElementById("bonne-reponse").style.display = "block";
-                    document.getElementById("mauvaise-reponse").style.display = "none";
-                    setTimeout(function () { window.location.replace("movie-quiz.html") }, 3000);
-                    localStorage.setItem(("trouvé " + data.items[i].name), ("https://image.tmdb.org/t/p/original" + data.items[i].poster_path));
-                    localStorage.setItem("dernier trouvé", data.items[i].id);
-                    localStorage.setItem("type dernier trouvé(é)", "série");
+                        document.getElementById("bonne-reponse").style.display = "block";
+                        document.getElementById("mauvaise-reponse").style.display = "none";
+                        setTimeout(function () { window.location.replace("movie-quiz.html") }, 3000);
+                        localStorage.setItem(("trouvé " + data.items[i].name), ("https://image.tmdb.org/t/p/original" + data.items[i].poster_path));
+                        localStorage.setItem("dernier trouvé", data.items[i].id);
+                        localStorage.setItem("type dernier trouvé(é)", "série");
 
-                } else if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") != data.items[i].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
-                    document.querySelector("input").value = "";
-                    document.getElementById("mauvaise-reponse").style.display = "block";
+                    } else if ((document.querySelector("input").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") != data.items[i].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) && (lienFilm === "https://image.tmdb.org/t/p/original" + data.items[i].backdrop_path)) {
+                        document.querySelector("input").value = "";
+                        document.getElementById("mauvaise-reponse").style.display = "block";
+                    }
                 }
-            }
 
 
-        })
+            })
+        }
 
     }
 
