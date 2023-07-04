@@ -65,8 +65,9 @@ h1 {
 
 .cv-link {
     color: black;
-    border: solid 1px black;
-    // border-radius: 50%;
+    border: solid 2px black;
+    border-radius: 50%;
+    font-weight: bold;
 }
 
 .cv-link:hover {
@@ -216,7 +217,6 @@ h1 {
 }
 
 #projets {
-    min-height: 100vh;
 
     h2 {
         padding: 0 10px 30px 10px;
@@ -346,7 +346,13 @@ h1 {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
+    #cv-desktop {
+        display: none;
+    }
+
+
+
     #contact {
         img {
             width: 30px;
@@ -364,12 +370,11 @@ h1 {
             min-height: 50vh;
             min-width: 100%;
         }
-
-
     }
 
+
+
     #projets {
-        min-height: 0;
 
         h3 {
             font-size: 0.7rem;
@@ -377,4 +382,25 @@ h1 {
     }
 
 
+}
+
+
+@media screen and (min-width: 768px) {
+    #cv-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #a-propos {
+        min-height: 50vh;
+
+        #a-propos-texte {
+            min-height: 50vh;
+        }
+
+        img {
+            min-height: 100%;
+        }
+    }
 }
