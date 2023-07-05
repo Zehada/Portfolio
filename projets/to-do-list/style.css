@@ -1,0 +1,40 @@
+table {
+    width: 90%!important;
+}
+
+#taskForm {
+    width: 15rem;
+}
+
+.nameModify, .descriptionModify {
+    width: 100%!important;
+}
+
+.dateModify {
+    width: 8.5rem!important;
+}
+
+.modifier:focus, .modify:focus, .supprimer:focus {
+        border: none!important;
+}
+
+.modifier img, .modify img, .supprimer img {
+    width: 20px;
+}
+
+.message-erreur {
+    color: red!important;
+    margin: 1.5rem!important;
+}
+
+@media screen and (max-width: 575px) {
+    body, #taskName, #taskDescription, #taskDateLimit, .btn, .nameModify, .descriptionModify, .dateModify {
+        font-size: 0.7rem!important;
+    }
+    .dateModify {
+        width: 6.3rem!important;
+    }
+
+
+}
+
